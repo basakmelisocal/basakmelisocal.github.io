@@ -20,7 +20,7 @@
                 <p style="text-align:center">
                   <name>Melis Öcal</name>
                 </p>
-                <p> I am a second-year PhD student in the field of computer vision and machine learning, supervised by <a href="https://staff.fnwi.uva.nl/th.gevers/">Prof. Theo Gevers</a> and co-supervised by <a href="https://karaoglusezer.github.io/">Dr. Sezer Karaoğlu</a> at the <a href="https://ivi.fnwi.uva.nl/uvaboschdeltalab/">Delta Lab</a>, which is a collaboration between <a href="https://www.uva.nl/en">the University of Amsterdam</a> and <a href="https://www.bosch-ai.com/">Bosch</a>. I closely collaborate with <a href="https://www.linkedin.com/in/tatarchm/?originalSubdomain=de">Dr. Maxim Tatarchenko</a>. My research interests mainly lie in <b>scene understanding</b>, <b>3D reconstruction</b>, <b>view synthesis</b> and <b>unsupervised learning</b> for <b>autonomous driving</b> and <b>robotic</b> applications.
+                <p> I am a second-year PhD student in the field of computer vision and machine learning, supervised by <a href="https://staff.fnwi.uva.nl/th.gevers/">Prof. Theo Gevers</a> and co-supervised by <a href="https://karaoglusezer.github.io/">Dr. Sezer Karaoğlu</a> at the <a href="https://ivi.fnwi.uva.nl/uvaboschdeltalab/">Delta Lab</a>, which is a collaboration between <a href="https://www.uva.nl/en">the University of Amsterdam</a> and <a href="https://www.bosch-ai.com/">Bosch</a>. I closely collaborate with <a href="https://www.linkedin.com/in/tatarchm/?originalSubdomain=de">Dr. Maxim Tatarchenko</a> and <a href="https://www.linkedin.com/in/vien-ngo-383ba3a6/">Dr. Vien Ngo</a>. My research interests mainly lie in <b>scene understanding</b>, <b>3D reconstruction</b>, <b>view synthesis</b> and <b>unsupervised learning</b> for <b>autonomous driving</b> and <b>robotic</b> applications.
                 </p>
                 <p>
                   In 2022, I obtained my Master’s degree in Informatics from <a href="https://www.tum.de/en/">Technical University of Munich</a> with a focus on computer vision and machine learning. I worked on several research projects at the <a href="https://vision.in.tum.de/">Computer Vision Group</a> led by <a href="https://vision.in.tum.de/members/cremers">Prof. Daniel Cremers</a>. I completed my master's thesis on 3D reconstruction at the <a href="https://mlr.in.tum.de//">Smart Robotics Lab</a> under <a href="https://mlr.in.tum.de/members/leuteneg">Prof. Stefan Leutenegger</a>.
@@ -43,7 +43,10 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <heading>News</heading>
                 <p>
-                	<b>January, 2023:</b> Our work <a href="https://link.springer.com/article/10.1007/s10489-023-04478-8">Learning Vision Based Autonomous Lateral Vehicle Control without Supervision</a> was accepted to Applied Intelligence.
+                	<b>July, 2024:</b> Our work <a href="https://arxiv.org/abs/2407.20727">SceneTeller: Language-to-3D Scene Generation</a> was accepted at <a href="https://eccv2024.ecva.net/">ECCV 2024</a>!
+                </p>
+                <p>
+                	<b>January, 2023:</b> Our work <a href="https://link.springer.com/article/10.1007/s10489-023-04478-8">Learning Vision Based Autonomous Lateral Vehicle Control without Supervision</a> was accepted to Applied Intelligence!
                 </p>	
                 <p>
                   <b>September, 2022:</b> I started my PhD in computer vision, under the supervision of <a href="https://staff.fnwi.uva.nl/th.gevers/">Prof. Theo Gevers</a> at the <a href="https://ivi.fnwi.uva.nl/uvaboschdeltalab/">UvA-Bosch Delta Lab</a>!
@@ -59,6 +62,52 @@
             </tr>
           </tbody></table>      
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="sceneteller_stop()" onmouseover="sceneteller_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='sceneteller_image'><video class="video-small" width=100% muted autoplay loop>
+                  <source src="images2/sceneteller.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images2/sceneteller.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function sceneteller_start() {
+                    document.getElementById('sceneteller_image').style.opacity = "1";
+                    var videos = document.querySelectorAll(".video-small");
+                    videos.forEach(function(video) {
+                    video.playbackRate = 10.0;
+                    });
+                  }
+
+                  function sceneteller_stop() {
+                    document.getElementById('sceneteller_image').style.opacity = "0";
+                  }
+                  sceneteller_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://sceneteller.github.io/">
+                  <span class="papertitle">SceneTeller: Language-to-3D Scene Generation</span>
+                </a>
+                <br>
+                <strong>Melis Öcal</strong>,
+                <a href="https://www.linkedin.com/in/tatarchm/?originalSubdomain=de">Maxim Tatarchenko</a>,
+                <a href="https://karaoglusezer.github.io/">Sezer Karaoğlu</a>,
+                <a href="https://staff.fnwi.uva.nl/th.gevers/">Theo Gevers</a>
+                <br>
+                <em>European Conference on Computer Vision</em>, 2024
+                <br>
+                <a href="https://sceneteller.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2407.20727">arXiv</a>
+                <p></p>
+                <p>
+                  Built using in-context learning, CAD model retrieval and 3DGS-based stylization, SceneTeller generates realistic and high-quality 3D spaces from natural language prompts.
+                </p>
+              </td>
+            </tr>
 
             <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
